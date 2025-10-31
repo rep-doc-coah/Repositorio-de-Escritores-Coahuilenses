@@ -1,0 +1,26 @@
+{
+  "documents": [
+    {
+      "id": 1,
+      "titulo": "¿SE PUEDE HACER UNA CIUDAD INTELIGENTE?",
+      "autor": "Dra. María Eugenia Molar Orozco;MDA. Jesús Velázquez Lozano;MDA. María Genoveva Vázquez Jiménez",
+      "fecha": "2020-06-01",
+      "categoria": "Tecnología",
+      "enlace_gdrive": "https://drive.google.com/file/d/1sPzFNzZY5-9SVo6DGdEXF7l3byokV0xj/view?usp=drive_link",
+      "descripcion": "Una ciudad inteligente es una ciudad enfocada en el camino hacia la sustentabilidad, y que se ocupa de eficientar los aspectos ambientales, sociales, económicos e institucionales de su funcionamiento para mejorar la calidad de vida de sus habitantes y cuidar el planeta.",
+      "palabras_clave": [],
+      "tamaño_mb": "1.0"
+    },
+    {
+      "id": 2,
+      "titulo": "Acercamiento a los estudios de género en las Ciencias Sociales en el estado de Coahuila",
+      "autor": "Itzia María Cazares Palacios; Karla Patricia Valdés García",
+      "fecha": "2019-03-01",
+      "categoria": "Educación",
+      "enlace_gdrive": "https://drive.google.com/file/d/1POnVVVZRvGsq0HThim76nx-U2SYTyd2y/view?usp=drive_link",
+      "descripcion": "La categoría de género ha sido utilizada desde ese entonces de formas distintas:\npara analizar datos desagregados por sexo en problemáticas y/o fenómenos\ndiversos;\ncomo un valor distinto en una misma variable; sustituyéndolo por la categoría\nde mujeres; por mencionar algunos",
+      "palabras_clave": [],
+      "tamaño_mb": "4.0"
+    }
+  ]
+}
