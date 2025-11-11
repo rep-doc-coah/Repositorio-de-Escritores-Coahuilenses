@@ -1,0 +1,70 @@
+{
+  "documents": [
+    {
+      "id": 1,
+      "titulo": "Tamara Isabel Terrazas Medina, Semblanza",
+      "autor": "Tamara Isabel Terrazas Medina",
+      "fecha": "2025-01-01",
+      "categoria": "Medicina y Ciencias de la Salud",
+      "enlace_gdrive": "https://drive.google.com/file/d/1a6nyD0zG5Z4NBbmoU9j_dCEMcfq6JrBv/view?usp=drive_link",
+      "descripcion": "Profesora de tiempo completo de la Universidad Autónoma de Coahuila (UAdeC), en México, en las materias de Taller de Lectura y Redacción 1 y 2, en la Preparatoria Número Uno de la misma Universidad",
+      "palabras_clave": [],
+      "tamaño_mb": "2.7"
+    },
+    {
+      "id": 2,
+      "titulo": "¿se puede hacer una ciudad inteligente?",
+      "autor": "Dra. María Eugenia Molar Orozco;MDA. Jesús Velázquez Lozano;MDA. María Genoveva Vázquez Jiménez",
+      "fecha": "2020-06-01",
+      "categoria": "Tecnología",
+      "enlace_gdrive": "https://drive.google.com/file/d/1sPzFNzZY5-9SVo6DGdEXF7l3byokV0xj/view?usp=drive_link",
+      "descripcion": "Una ciudad inteligente es una ciudad enfocada en el camino hacia la sustentabilidad, y que se ocupa de eficientar los aspectos ambientales, sociales, económicos e institucionales de su funcionamiento para mejorar la calidad de vida de sus habitantes y cuidar el planeta.",
+      "palabras_clave": [],
+      "tamaño_mb": "1.0"
+    },
+    {
+      "id": 3,
+      "titulo": "Acercamiento a los estudios de género en las Ciencias Sociales en el estado de Coahuila",
+      "autor": "Itzia María Cazares Palacios; Karla Patricia Valdés García",
+      "fecha": "2019-03-01",
+      "categoria": "Educación",
+      "enlace_gdrive": "https://drive.google.com/file/d/1POnVVVZRvGsq0HThim76nx-U2SYTyd2y/view?usp=drive_link",
+      "descripcion": "La categoría de género ha sido utilizada desde ese entonces de formas distintas:\npara analizar datos desagregados por sexo en problemáticas y/o fenómenos\ndiversos;\ncomo un valor distinto en una misma variable; sustituyéndolo por la categoría\nde mujeres; por mencionar algunos",
+      "palabras_clave": [],
+      "tamaño_mb": "4.0"
+    },
+    {
+      "id": 4,
+      "titulo": "Agenda sociodigital de la campaña presidencial de 2018",
+      "autor": "Gómez Aguilera, Blanca Nahayeli;López Aguirre, José Luis",
+      "fecha": "2018-01-01",
+      "categoria": "Humanidades y Ciencias de la Conducta",
+      "enlace_gdrive": "https://drive.google.com/file/d/135WVbiK555JE9dAJKJ69c-NCNCqucl1-/view?usp=drive_link",
+      "descripcion": "Temas, emociones y notas falsas que motivaron la interacción  político-ciudadana ",
+      "palabras_clave": [],
+      "tamaño_mb": "3.2"
+    },
+    {
+      "id": 5,
+      "titulo": "Alcances de la Psicologia, 40 años de experiencias",
+      "autor": "jesus rodriguez cisneros",
+      "fecha": "2019-01-01",
+      "categoria": "Medicina y Ciencias de la Salud",
+      "enlace_gdrive": "https://drive.google.com/file/d/1zg4TIgKAZUVSBIoVmu_ca2qBQD8SZjFG/view?usp=drive_link",
+      "descripcion": "40 años de experiencias profesionales, generacion XII 1975-1979",
+      "palabras_clave": [],
+      "tamaño_mb": "2.9"
+    },
+    {
+      "id": 6,
+      "titulo": "Objetivos de desarrollo sostenible: expresiones de la investigacion cientifica y de la reflexion",
+      "autor": "Tamara Isabel Terrazas Medina; Zaida Francisca Morlett Villa; Diana Hernández Rivera; Beatriz Adriana Flores López; Rafael Diego Toro Torres",
+      "fecha": "2025-08-01",
+      "categoria": "Medicina y Ciencias de la Salud",
+      "enlace_gdrive": "https://drive.google.com/file/d/1PUL_UcKEltT1jk1NtS6RfsW_ADw_Crk0/view?usp=drive_link",
+      "descripcion": "se enfoca en tres Objetivos de Desarrollo Sostenible: Salud, Educación y Medio ambiente, y presenta investigaciones y propuestas que contribuyen a su implementación efectiva, especialmente en jóvenes de educación media superior, un grupo clave pero poco estudiado.",
+      "palabras_clave": [],
+      "tamaño_mb": "5.3"
+    }
+  ]
+}
