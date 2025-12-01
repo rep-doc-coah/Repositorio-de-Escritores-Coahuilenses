@@ -1,0 +1,367 @@
+<style>
+:root {
+    --kitt-red: #ff2a2a;
+    --kitt-red-dark: #b30000;
+    --kitt-bg: #030303;
+    --kitt-panel: #070707;
+    --kitt-border: #1a1a1a;
+    --kitt-text: #e2e2e2;
+    --kitt-text-dim: #888;
+
+    /* TURBO BOOST */
+    --tb-glow: 0 0 25px rgba(255,30,30,0.9);
+    --tb-glow-soft: 0 0 12px rgba(255,30,30,0.6);
+}
+
+/* BODY */
+body {
+    background: radial-gradient(circle at 50% 0%, #33000044, #000 80%);
+    font-family: 'Segoe UI', sans-serif;
+    color: var(--kitt-text);
+    margin: 0;
+    animation: tb-background 12s infinite alternate;
+}
+
+@keyframes tb-background {
+    0% { background-position: 50% 0%; }
+    100% { background-position: 50% 300%; }
+}
+
+/* HEADER */
+.header {
+    background: linear-gradient(180deg, #0c0000, #000);
+    padding: 2.5rem 0;
+    box-shadow: var(--tb-glow);
+    border-bottom: 3px solid var(--kitt-red);
+    animation: tb-header-pulse 2s infinite alternate ease-in-out;
+}
+
+@keyframes tb-header-pulse {
+    from { box-shadow: var(--tb-glow-soft); }
+    to   { box-shadow: var(--tb-glow); }
+}
+
+/* SVG LOGO TURBO BOOST */
+#kitt-logo {
+    width: 360px;
+    filter: drop-shadow(0 0 10px red) drop-shadow(0 0 20px red);
+    animation: tb-logo-pulse 1.6s infinite alternate ease-in-out;
+}
+
+@keyframes tb-logo-pulse {
+    from { filter: drop-shadow(0 0 6px red); }
+    to   { filter: drop-shadow(0 0 20px red); }
+}
+
+/* PANELS */
+.search-container, .document-card {
+    background: var(--kitt-panel);
+    border: 1px solid var(--kitt-border);
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 0 14px rgba(255,0,0,0.4);
+    transition: 0.3s ease;
+}
+
+.document-card:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: var(--tb-glow);
+}
+
+/* INPUTS */
+.search-input, .filter-select, .filter-input {
+    background: #111;
+    border: 1px solid #333;
+    color: var(--kitt-text);
+    padding: 0.9rem;
+    border-radius: 10px;
+    transition: 0.25s ease;
+}
+
+.search-input:focus,
+.filter-select:focus,
+.filter-input:focus {
+    border-color: var(--kitt-red);
+    box-shadow: var(--tb-glow-soft);
+}
+
+/* BUTTONS */
+.btn-primary {
+    background: var(--kitt-red);
+    color: white;
+    padding: 0.9rem 1.3rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: var(--tb-glow-soft);
+    transition: 0.25s ease;
+}
+
+.btn-primary:hover {
+    background: var(--kitt-red-dark);
+    transform: translateY(-3px) scale(1.04);
+    box-shadow: var(--tb-glow);
+}
+
+/* BUTTON OUTLINE */
+.btn-outline {
+    border: 1px solid var(--kitt-red);
+    color: var(--kitt-red);
+}
+
+.btn-outline:hover {
+    background: var(--kitt-red);
+    color: #fff;
+    box-shadow: var(--tb-glow-soft);
+}
+
+/* SCANNER TURBO BOOST (dentro del SVG) */
+#kitt-logo rect[width="150"] {
+    animation-duration: 0.65s !important; /* Más rápido */
+}
+
+/* FOOTER */
+.footer {
+    background: #000;
+    padding: 2.5rem 1rem;
+    text-align: center;
+    border-top: 2px solid var(--kitt-red);
+    box-shadow: var(--tb-glow-soft);<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KITT — Biblioteca Digital</title>
+
+<style>
+:root {
+    --kitt-red: #ff2a2a;
+    --kitt-red-dark: #b30000;
+    --kitt-bg: #030303;
+    --kitt-panel: #070707;
+    --kitt-border: #1a1a1a;
+    --kitt-text: #e2e2e2;
+    --kitt-text-dim: #888;
+
+    /* TURBO BOOST */
+    --tb-glow: 0 0 25px rgba(255,30,30,0.9);
+    --tb-glow-soft: 0 0 12px rgba(255,30,30,0.6);
+}
+
+body {
+    background: radial-gradient(circle at 50% 0%, #33000044, #000 80%);
+    font-family: 'Segoe UI', sans-serif;
+    color: var(--kitt-text);
+    margin: 0;
+    animation: tb-background 12s infinite alternate linear;
+}
+
+@keyframes tb-background {
+    0% { background-position: 50% 0%; }
+    100% { background-position: 50% 300%; }
+}
+
+/* HEADER */
+.header {
+    background: linear-gradient(180deg, #0c0000, #000);
+    padding: 2.5rem 0 1rem 0;
+    box-shadow: var(--tb-glow);
+    border-bottom: 3px solid var(--kitt-red);
+    text-align: center;
+    animation: tb-header-pulse 2s infinite alternate ease-in-out;
+}
+
+@keyframes tb-header-pulse {
+    from { box-shadow: var(--tb-glow-soft); }
+    to   { box-shadow: var(--tb-glow); }
+}
+
+/* SVG LOGO */
+#kitt-logo {
+    width: 360px;
+    filter: drop-shadow(0 0 10px red) drop-shadow(0 0 20px red);
+    animation: tb-logo-pulse 1.6s infinite alternate ease-in-out;
+}
+
+@keyframes tb-logo-pulse {
+    from { filter: drop-shadow(0 0 6px red); }
+    to   { filter: drop-shadow(0 0 20px red); }
+}
+
+/* PANEL */
+.main-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1.5rem;
+}
+
+.panel {
+    background: var(--kitt-panel);
+    border: 1px solid var(--kitt-border);
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 0 14px rgba(255,0,0,0.4);
+    transition: 0.3s ease;
+}
+
+/* BUSCADOR */
+.search-input {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.9rem;
+    border-radius: 10px;
+    background: #111;
+    border: 1px solid #333;
+    color: var(--kitt-text);
+}
+
+.search-input:focus {
+    border-color: var(--kitt-red);
+    box-shadow: var(--tb-glow-soft);
+}
+
+/* BUTTONS */
+.btn-primary {
+    background: var(--kitt-red);
+    color: white;
+    padding: 0.9rem 1.3rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: var(--tb-glow-soft);
+    transition: 0.25s ease;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background: var(--kitt-red-dark);
+    transform: translateY(-3px) scale(1.04);
+    box-shadow: var(--tb-glow);
+}
+
+/* CARDS */
+.document-card {
+    background: #080808;
+    border: 1px solid #222;
+    padding: 1.2rem 1rem;
+    border-radius: 12px;
+    margin-top: 1rem;
+    transition: 0.25s ease;
+}
+
+.document-card:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: var(--tb-glow);
+}
+
+/* FOOTER */
+.footer {
+    background: #000;
+    padding: 2.5rem 1rem;
+    text-align: center;
+    border-top: 2px solid var(--kitt-red);
+    box-shadow: var(--tb-glow-soft);
+    margin-top: 2rem;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    #kitt-logo { width: 260px; }
+}
+</style>
+</head>
+
+<body>
+
+<header class="header">
+
+<!-- ===================== -->
+<!-- 🎯  LOGO SVG COMPLETO -->
+<!-- ===================== -->
+
+<svg id="kitt-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 200" width="320" height="110">
+  <defs>
+    <filter id="neon" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <linearGradient id="bgGrad" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#070707"/>
+      <stop offset="100%" stop-color="#111111"/>
+    </linearGradient>
+
+    <linearGradient id="edgeGrad" x1="0" x2="1">
+      <stop offset="0%" stop-color="#ff3b3b"/>
+      <stop offset="50%" stop-color="#ff0000"/>
+      <stop offset="100%" stop-color="#b30000"/>
+    </linearGradient>
+
+    <mask id="slotMask">
+      <rect width="600" height="200" fill="white" />
+      <rect x="60" y="104" width="480" height="12" rx="6" ry="6" fill="black"/>
+    </mask>
+  </defs>
+
+  <rect x="18" y="18" width="564" height="164" rx="20" fill="none"
+        stroke="url(#edgeGrad)" stroke-width="6" filter="url(#neon)"/>
+
+  <rect x="30" y="30" width="540" height="140" rx="16" fill="url(#bgGrad)" stroke="#111"/>
+
+  <!-- scanner -->
+  <g mask="url(#slotMask)">
+    <rect x="60" y="102" width="480" height="16" rx="8" fill="#080808" />
+
+    <!-- BAR – Turbo Boost (más rápido) -->
+    <rect x="-160" y="100" width="150" height="20" rx="8" fill="url(#edgeGrad)" opacity="0.95" filter="url(#neon)">
+      <animate attributeName="x" from="-180" to="600" dur="0.7s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- KR BOX -->
+  <g transform="translate(48,44)">
+    <rect width="86" height="86" rx="12" fill="#070707" stroke="url(#edgeGrad)" stroke-width="3" filter="url(#neon)"/>
+    <text x="43" y="54" text-anchor="middle" font-family="Segoe UI" font-weight="800"
+          font-size="36" fill="#ffb3b3">KR</text>
+  </g>
+
+  <!-- TEXT -->
+  <text x="160" y="84" font-family="Segoe UI" font-weight="800" font-size="58" fill="#ff3b3b">
+      <tspan stroke="#0b0b0b" stroke-width="6" paint-order="stroke">KITT</tspan>
+      <tspan dx="12" y="110" fill="#ffb3b3" font-size="20" font-weight="700">Library</tspan>
+  </text>
+</svg>
+
+</header>
+
+<div class="main-container">
+
+<div class="panel">
+    <h2>Buscar documentos</h2>
+    <input type="text" class="search-input" placeholder="Escribe el título o categoría...">
+    <button class="btn-primary">Buscar</button>
+</div>
+
+<div class="document-card">
+    <h3>Ejemplo de Documento</h3>
+    <p>Descripción breve del contenido del archivo.</p>
+    <button class="btn-primary">Descargar</button>
+</div>
+
+</div>
+
+<footer class="footer">
+    KITT — Sistema Avanzado de Biblioteca Digital
+</footer>
+
+</body>
+</html>
+
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    #kitt-logo { width: 270px; }
+}
+</style>
