@@ -42,16 +42,17 @@
             padding: 0 1rem;
         }
 
-        /* Header - Solo imagen limpia, sin overlay, sin texto */
+        /* Header - Imagen sin distorsión, se muestra completa */
         .header {
             background: url('https://raw.githubusercontent.com/rep-doc-coah/Repositorio-de-Escritores-Coahuilenses/main/Documents/banner.png');
-            background-size: cover;
+            background-size: contain;
             background-position: center;
             background-repeat: no-repeat;
-            padding: 6rem 0;
+            background-color: #f8fafc;
+            padding: 4rem 0;
             margin-bottom: 2rem;
             width: 100%;
-            height: 75%;
+            min-height: 300px;
         }
 
         .header-content {
@@ -480,6 +481,11 @@
                 text-align: center;
             }
 
+            .results-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
             .filters-grid {
                 grid-template-columns: 1fr;
             }
@@ -511,11 +517,11 @@
     </style>
 </head>
 <body>
-    <!-- Header con imagen de banner - Limpia, sin overlay, sin texto de carga -->
+    <!-- Header con imagen de banner - Sin distorsión, se aprecia completa -->
     <header class="header">
         <div class="container">
             <div class="header-content">
-                <!-- Contenedor vacío - sin estadísticas ni mensajes -->
+                <!-- Contenedor vacío - sin elementos sobre la imagen -->
             </div>
         </div>
     </header>
@@ -615,7 +621,7 @@
         <!-- Results Section -->
         <section class="results-section">
             <div class="results-header">
-                <div id="stats"></div>
+                <div id="stats" class="stats-info"></div>
                 <div class="sort-group" style="display: none;" id="sortContainer">
                     <!-- Ordenamiento se mostrará dinámicamente -->
                 </div>
@@ -657,13 +663,22 @@
             });
         }
 
+        // Función para actualizar el contador de documentos
+        function updateStats(current, total) {
+            const statsElement = document.getElementById('stats');
+            if (statsElement) {
+                statsElement.innerHTML = `📄 Mostrando ${current} de ${total} documentos`;
+            }
+        }
+
         // Simulación mientras no exista search.js (opcional)
         if (!window.pdfSearch) {
             window.pdfSearch = {
                 currentFilters: { search: '' },
                 performSearch: function() {
                     console.log('⚠️ search.js no está cargado. La búsqueda no funcionará.');
-                    alert('El módulo de búsqueda no está disponible. Por favor, asegúrate de que el archivo search.js esté en el directorio correcto.');
+                    // Simulación de resultados para demostración
+                    updateStats(0, 0);
                 },
                 clearFilters: function() {
                     document.getElementById('searchInput').value = '';
